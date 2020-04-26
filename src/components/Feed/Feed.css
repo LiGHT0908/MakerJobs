@@ -1,0 +1,116 @@
+.feed{
+    margin: 230px 0;
+    padding: 40px 0;
+    /* background: blue; */
+}
+.feed-container{
+    margin: none;
+}
+.feed-container a{
+    float : right;
+    padding : 10px;
+    cursor: pointer;
+    color : rgb(200,200,200);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.feed-container a:hover{
+    color: rgb(255,255,255);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+.feed-packet{
+    background: rgb(25,25,25);
+    margin : 15px 0;
+    padding : 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.feed-packet:hover{
+    background: rgb(30, 30, 30);
+    -webkit-transform: translate(0,-0.5em);
+    -moz-transform: translate(0,-0.5em);
+    -o-transform: translate(0,-0.5em);
+    -ms-transform: translate(0,-0.5em);
+}
+.feed-packet:active{
+    background: rgb(40,40,40);
+}
+.job-img{
+    margin: 5px 5px;
+    margin-right:5px;
+    padding:none; 
+    height: 50px;
+    border-radius: 50%;
+}
+.job-details{
+    margin : auto 10px;
+    color : rgb(200, 200, 200);
+}
+.job-details h3{
+    padding: 3px;
+}
+.job-details h4{
+    padding: 3px;
+}
+
+@media only screen and (max-width:1000px){
+    .feed h1{
+        font-size:25px; 
+    }
+    .feed-packet h3{
+        font-size:15px;
+    }
+    .feed-packet h4{
+        font-size:13px;
+    }
+    .feed-container span{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:577px){
+    .feed{
+        margin: 120px 0;
+    }
+    .feed h1{
+        font-size:21px;
+    }
+    .feed-packet h3{
+        font-size:13px;
+    }
+    .feed-packet h4{
+        font-size:11px;
+    }
+    .feed-container span{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:480px){
+    .feed{
+        margin: 170px 0;
+        text-align:center;
+    }
+    .feed h1{
+        font-size:21px;
+    }
+}
+@media only screen and (max-width:375px){
+    .feed-packet{
+        padding:20px 13px;
+    }
+    .feed-packet img{
+        height:40px
+    }
+}
+@media only screen and (max-width:320px){
+    .feed{
+        margin: 230px 0;
+    }
+}

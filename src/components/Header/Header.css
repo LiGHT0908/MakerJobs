@@ -1,0 +1,52 @@
+@font-face{
+    font-family: pacifico;
+    src:url('../../assets/Font/Pacifico/Pacifico-Regular.ttf');
+}
+.Header{
+    display : flex;
+    flex : 2 1;
+    background-color:rgb(15, 15, 15); 
+    color : White;
+    justify-content: space-evenly;
+    align-items: center;
+    margin : 20px;
+}
+.Header h1{
+    font-family: pacifico;
+    font-size: 40px;
+}
+.Header span{
+    color : rgb(24, 108, 177);
+    font-family: pacifico;
+}
+@media only screen and (max-width:577px){
+    .Header{
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width:480px){
+    .Header h1{
+        font-size: 35px;
+    }
+    .Header h1 span{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:414px){
+    .Header h1{
+        padding-left:70px;
+    }
+}
+@media only screen and (max-width:375px){
+    .Header h1{
+        padding-left:50px;
+    }
+}
+@media only screen and (max-width:320px){
+    .Header h1{
+        font-size:28px;
+    }
+    .Header h1 span{
+        font-size:28px;
+    }
+}

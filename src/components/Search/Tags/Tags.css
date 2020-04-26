@@ -1,0 +1,58 @@
+.tags-container{
+    display: inline;
+    margin-bottom: 30px;
+}
+.tags-container a{
+    color : white;
+}
+.tag-packet{
+    background: rgba(20,20,20);
+    border-radius: 25px;
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: 0.1s ease-in-out;
+
+}
+.tag-packet:hover{
+    background: rgb(25,25,25);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}
+.tag-packet:active{
+    background: rgb(30,30,30);
+}
+.tag-packet span{
+    border-radius : 50%;
+    font-size: 25px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 0.5px;
+}
+
+@media only screen and (max-width:1000px){
+    .tag-packet{
+        font-size: 13px;
+      }
+      .tag-packet span{
+          font-size: 20px;
+      }
+}
+@media only screen and (max-width:577px){
+    .tag-packet{
+        font-size: 11px;
+      }
+      .tag-packet span{
+          font-size: 18px;
+      }
+}
+@media only screen and (max-width:320px){
+    .tag-packet{
+        font-size: 11px;
+      }
+      .tag-packet span{
+          font-size: 15px;
+      }
+}
+

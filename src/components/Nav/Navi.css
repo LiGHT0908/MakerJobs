@@ -1,0 +1,67 @@
+@font-face{
+    src:url('../../assets/Font/Gotu/Gotu-Regular.ttf');
+    font-family: gotu;;
+}
+.navigation select{
+    display: none;
+}
+.Navi {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width:100%;
+
+}
+.Navi li {
+    /* background-color: pink; */
+    font-size: 20px; 
+    border-radius: 25px;
+    margin-bottom:30px;
+    padding : 5%;
+    padding-top: 8%;
+    font-size: 80%;
+    margin-top: 5%;
+    font-family: gotu;
+    min-width: 100px;
+    white-space: nowrap;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.Navi li:hover{
+    -webkit-transform: translate(0,-0.5em);
+    -moz-transform: translate(0,-0.5em);
+    -o-transform: translate(0,-0.5em);
+    -ms-transform: translate(0,-0.5em);
+    color : rgb(74, 174, 255);
+    text-shadow: rgba(31, 143, 235, 0.4);
+    cursor: pointer;
+}
+.dropdown a{
+    cursor : pointer;
+}
+.dropdown img  {
+    width: 22px;
+    padding-bottom: none;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+   }
+   .dropdown img:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+   }
+@media only screen and (max-width:577px){
+    .dropdown img{
+        width: 18px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .Navi{
+        background: yellow;
+    }
+}
