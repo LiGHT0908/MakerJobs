@@ -19,6 +19,20 @@
     color : rgb(24, 108, 177);
     font-family: pacifico;
 }
+
+.dropmenu{
+    margin:10px auto;
+    max-width:50%; 
+}
+.dropmenu ul{
+    list-style-type: none;
+}
+.dropmenu ul li{
+    text-align: right;
+    padding:10px;
+    font-size: 14px;
+}
+
 @media only screen and (max-width:577px){
     .Header{
         justify-content: space-around;

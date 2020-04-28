@@ -15,11 +15,6 @@ class Nav extends React.Component{
     {
         let menu;
         let drop;
-        if(this.state.toggle){
-            drop=(
-            <h1>yolo bitches</h1>
-            )
-        }
         if(this.state.width>768)
         {
             menu = (
@@ -36,7 +31,7 @@ class Nav extends React.Component{
         {
             menu = (
                 <div className="dropdown">
-                    <a onClick={this.toggle}><img src={hamburger}></img></a>
+                    <a onClick={this.props.dropit}><img src={hamburger}></img></a>
                     {drop}
                 </div>
             )
