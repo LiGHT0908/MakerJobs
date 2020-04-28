@@ -60,8 +60,3 @@
         width: 18px;
     }
 }
-@media only screen and (max-width: 480px){
-    .Navi{
-        background: yellow;
-    }
-}

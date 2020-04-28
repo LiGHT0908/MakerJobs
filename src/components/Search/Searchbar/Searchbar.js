@@ -40,13 +40,21 @@ class Searchbar extends React.Component{
                 fontSize: "13px"
             }
         }
+        else if (this.state.width<669 && this.state.width>640){
+            var styles = {
+                margin : "0 5px",
+                height : "35px",
+                width : "70px", 
+                fontSize: "13px"
+            }
+        }
         else
         {
             var styles = {
-                margin : "0 10px",
-                height : "35px",
-                width : "90px", 
-                fontSize: "13px"
+                margin : "0 5px",
+                height : "30px",
+                width : "50px", 
+                fontSize: "11px"
             }
         }
         return (
