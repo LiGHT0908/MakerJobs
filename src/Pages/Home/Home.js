@@ -27,10 +27,13 @@ class Home extends React.Component{
 
 	render() {
         let menu;
+        let cutwidth = 0.1*window.innerWidth
+        let blur="none";
         if (this.state.togglemenu)
         {
+            blur = "blur(3px)"
             menu = (
-               
+                
                 <div className="menuoverlay">
                     <ul>
                     <li><a href="">Browse Companies</a></li>
@@ -38,22 +41,23 @@ class Home extends React.Component{
                     <li><a href="">Post a Job</a></li>
                     </ul>
                 </div>
-          
+
             )
         } 
 		return(
 			<div className="body">
 				<Header togglemenu={this.toggleMenu.bind(this)} />
-                <div className="hold">
+                <div className="menucontainer">
                     {menu}
-                    <div className="home-content-container">
+                </div> 
+                <div className="home-content-container" style={{WebkitFilter:`${blur}`}}>
+                        
                         <div className="home-quote">
                             <h3>Are you looking for a maker/Developer Job that you wish to search here?</h3>
                         </div>
                         <Search placeHolder="Search Jobs" buttonTitle="Search"/>
                         <Feed />
                     </div>
-                </div>
                 <Footer />
             </div>
 		)
