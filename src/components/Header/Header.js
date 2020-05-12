@@ -7,10 +7,10 @@ class Header extends React.Component{
         super(props);
         this.state = {
             toggleDropdown : false
+           
         }
     }
 
-    
 
     render = () => {
         if(this.state.toggleDropdown){
