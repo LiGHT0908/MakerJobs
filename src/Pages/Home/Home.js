@@ -7,8 +7,8 @@ import './Home.css'
 
 
 class Home extends React.Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             togglemenu:false
         }
@@ -25,7 +25,6 @@ class Home extends React.Component{
             this.setState({togglemenu:true});
         }
     }
-
 	render() {
         let menu;
         let style={
@@ -50,22 +49,24 @@ class Home extends React.Component{
                 <li><a href="">Post a Job</a></li>
                 </ul>
             </div>
+            )
+        }
 
-        )
-       }
-        
-		return(
-            <div style={{position:"relative"}}>
+
+
+	    return(
+            <div className="body">
                 {menu}
                 <div className="body">
                     <Header togglemenu={this.toggleMenu.bind(this)} />
                     <div className="home-content-container">
-                            
-                        <div className="home-quote">
-                            <h3>Are you looking for a maker/Developer Job that you wish to search here?</h3>
-                        </div>
-                        <Search placeHolder="Search Jobs" buttonTitle="Search"/>
-                        <Feed />
+
+                    <div className="home-quote">
+                    <h3>Are you looking for a maker/Developer Job that you wish to search here?</h3>
+                    </div>
+                    <Search placeHolder="Search Jobs" buttonTitle="Search"/>
+                    <Feed />    
+                        
                     </div>
                     <Footer />
                 </div>  
@@ -73,5 +74,6 @@ class Home extends React.Component{
         )   
 	}
 }
+
 
 export default Home;

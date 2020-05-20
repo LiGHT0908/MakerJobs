@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import hamburger from '../../assets/Images/Menu-dropdown.png'
 import './Navi.css';
 
@@ -11,8 +12,14 @@ class Nav extends React.Component{
             toggle: false
         }
     }
+   
     render = () =>
     {
+        let navStyle={
+            color:"white",
+            padding:"13px",
+            textDecoration:"none"
+        }
         let menu;
         let drop;
         if(this.state.width>768)
@@ -20,9 +27,15 @@ class Nav extends React.Component{
             menu = (
                 <div className="navigation">
                     <nav className="Navi">
-                        <li>Browse Companies</li>
-                        <li>Find Jobs</li>
-                    <   li>Post a Job</li>
+                         <Link style={navStyle} to='/browsecompanies'>
+                            <li>Browse Companies</li>
+                        </Link>
+                        <Link style={navStyle} to='/findjobs'>
+                            <li>Find Jobs</li>
+                        </Link>
+                        <Link style={navStyle} to='/postjob'>
+                            <li>Post a Job</li>
+                        </Link>
                     </nav>
                 </div>
             )

@@ -2,15 +2,23 @@
 import React from 'react';
 import Home from './Pages/Home/Home'
 import Findjobs from './Pages/Findjobs/FindJobs'
-import {BrowserRouter as Router, Links , Route} from 'react-router-dom'
+import Postjob from './Pages/PostJob/Postjob'
+import BrowseCompanies from './Pages/BrowseCompanies/BrowseCompanies'
+import Page from './components/Page/Page'
+
+import {BrowserRouter, Links , Route} from 'react-router-dom'
 
 
 class App extends React.Component{
 	render() {
 		return(
-			<Router>
-				<Route  to='./Pages/Home/' component={Home} />
-			</Router>
+			<BrowserRouter>
+				<Route path='/' exact component={Home} />
+				<Route path='/home' component={Home} />
+				<Route path='/findjobs' exact component={Findjobs} />
+				<Route path='/postjob' exact component={Postjob} />
+				<Route path='/browsecompanies' exact component={BrowseCompanies} />
+			</BrowserRouter>
 		)
 	}
 }

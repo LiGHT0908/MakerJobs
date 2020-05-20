@@ -1,4 +1,9 @@
 
+.body{
+    position: relative;
+    
+
+}
 .home-content-container{
     margin: 70px auto;
     max-width: 60%;
