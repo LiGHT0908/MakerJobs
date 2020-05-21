@@ -18,11 +18,19 @@ class Header extends React.Component{
             var dropmenu = (
                 <div>
                     <div className="dropmenu">
-                        <ul>
-                            <li>Browse Companies</li>
-                            <li>Find Jobs</li>
-                            <li>Post a Job</li>
-                        </ul>
+                        <nav>
+                            <Link to="/browsecompanies">
+                                <li>Browse Companiasdes</li>
+                            </Link>
+                            <Link to="/findjobs">
+                                <li>Find Jobs</li>
+                            </Link>
+                            <Link to="/postjob">
+                                <li>Post a Job</li>
+                            </Link>
+                            
+                            
+                        </nav>
                     </div>
                 </div>
             )

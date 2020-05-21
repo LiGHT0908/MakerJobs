@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header'
 import Feed from '../../components/Feed/Feed'
 import Search from '../../components/Search/Search'
 import Footer from '../../components/Footer/Footer'
+import {Link} from 'react-router-dom'
 import './Home.css'
 
 
@@ -41,12 +42,18 @@ class Home extends React.Component{
        if(window.innerWidth<=768)
        {
         menu = (
-                
+                    
             <div className="menuoverlay" style={style}>
                 <ul>
-                <li><a href="">Browse Companies</a></li>
-                <li><a href="">Find Jobs</a></li>
-                <li><a href="">Post a Job</a></li>
+                    <Link to='/browsecompanies'>
+                        <li><a>Browse Companies</a></li>
+                    </Link>
+                    <Link to='/findjobs'>
+                        <li><a>Find Jobs</a></li>
+                    </Link>
+                    <Link to='/postjob'>
+                        <li><a>Post a Job</a></li>
+                    </Link>
                 </ul>
             </div>
             )

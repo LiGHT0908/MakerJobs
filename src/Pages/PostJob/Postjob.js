@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header'
 import Feed from '../../components/Feed/Feed'
 import Search from '../../components/Search/Search'
 import Footer from '../../components/Footer/Footer'
+import {Link} from 'react-router-dom'
 
 
 
@@ -44,9 +45,15 @@ class Postjob extends React.Component{
                 
             <div className="menuoverlay" style={style}>
                 <ul>
-                <li><a href="">Browse Companies</a></li>
-                <li><a href="">Find Jobs</a></li>
-                <li><a href="">Post a Job</a></li>
+                    <Link to='/browsecompanies'>
+                        <li><a>Browse Companies</a></li>
+                    </Link>
+                    <Link to='/findjobs'>
+                        <li><a>Find Jobs</a></li>
+                    </Link>
+                    <Link to='/postjob'>
+                        <li><a>Post a Job</a></li>
+                    </Link>
                 </ul>
             </div>
             )
@@ -60,8 +67,8 @@ class Postjob extends React.Component{
                 <div className="body">
                     <Header togglemenu={this.toggleMenu.bind(this)} />
                     <div className="home-content-container">
-
-                    <h1>This page is under Development :(</h1>    
+                        <h1>Post a Job</h1>
+                        <h1>This page is under Development :(</h1>    
                         
                     </div>
                     <Footer />
