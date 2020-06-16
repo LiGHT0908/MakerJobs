@@ -69,7 +69,7 @@ class Home extends React.Component{
                     <div className="home-content-container">
 
                     <div className="home-quote">
-                    <h3>Are you looking for a maker/Developer Job that you wish to search here?</h3>
+                    <h3>Are you looking for a Maker/Developer Job that you wish to search here?</h3>
                     </div>
                     <Search placeHolder="Search Jobs" buttonTitle="Search"/>
                     <Feed />    

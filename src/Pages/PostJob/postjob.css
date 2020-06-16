@@ -1,0 +1,66 @@
+@font-face{
+    font-family: pacifico;
+    src:url('../../assets/Font/Pacifico/Pacifico-Regular.ttf');
+}
+.home-content-container{
+    text-align: center;
+}
+.infoInput{
+    margin:40px 0px;
+    padding:40px;
+    border-radius:10px;
+    background:rgb(15,15,15);
+    border: 3px solid rgb(20,20,20);
+}
+.infoInput h3{
+    font-size:25px;
+}
+.info-heading{
+}
+.info-main{
+    text-align: left;
+}
+.infoInput:active{
+    border: 3px solid rgb(16, 38, 56);;
+}
+.infoInput:hover{
+    /* border: 3px solid rgb(16, 38, 56); */
+    border: 3px solid rgb(43, 43, 43);
+}
+@media only screen and (max-width:1000px){
+    .home-content-container h1{
+        font-size:30px;
+    }
+    .infoInput h3{
+        font-size:22px;
+    }
+}
+@media only screen and (max-width:800px){
+    .home-content-container h1{
+        font-size:25px;
+    }
+    .infoInput h3{
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:500px){
+    .home-content-container h1{
+        font-size:25px;
+    }
+    .infoInput h3{
+        font-size:18px;
+    }
+}
+@media only screen and (max-width:374px){
+    .home-content-container h1{
+        font-size:20px;
+    }
+    .infoInput h3{
+        font-size:15px;
+    }
+    .infoInput{
+        padding:10px;
+    }
+}
+
+

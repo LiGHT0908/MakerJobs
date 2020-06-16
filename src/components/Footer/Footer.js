@@ -20,8 +20,8 @@ class Footer extends React.Component{
                     </div>
 
 
-                    <div className="footer-head">
-                        <h1>Maker<span>Jobs</span>.</h1>
+                    <div  className="footer-head">
+                        <h1 onClick={window.scrollTo(0,0)}>Maker<span>Jobs</span>.</h1>
                     </div>
                        
                     

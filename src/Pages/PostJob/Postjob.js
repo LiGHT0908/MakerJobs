@@ -3,7 +3,9 @@ import Header from '../../components/Header/Header'
 import Feed from '../../components/Feed/Feed'
 import Search from '../../components/Search/Search'
 import Footer from '../../components/Footer/Footer'
+import InputPacket from '../../components/InputPacket/InputPacket'
 import {Link} from 'react-router-dom'
+import './postjob.css'
 
 
 
@@ -66,11 +68,58 @@ class Postjob extends React.Component{
                 {menu}
                 <div className="body">
                     <Header togglemenu={this.toggleMenu.bind(this)} />
-                    <div className="home-content-container">
-                        <h1>Post a Job</h1>
-                        <h1>This page is under Development :(</h1>    
+                        <div className="home-content-container">
+                            <h1>Post your Job today</h1>
                         
-                    </div>
+                                
+                            <div class="infoInput">
+                                <h3>About Job</h3>
+                                <div class="info-main">
+                                    <InputPacket 
+                                    label="Job Title" 
+                                    description=" this is the description of the above input box"
+                                    />
+
+                                    <InputPacket 
+                                    label="Location"
+                                    description=" this is the description of the above input box "
+                                    />
+
+                                    <InputPacket 
+                                    label="Job Type"
+                                    description=" this is the description of the above input box  "
+                                    />
+
+                                    <InputPacket 
+                                    label="Pay"
+                                    description=" this is the description of the above input box  "
+                                    />
+
+                                    <InputPacket 
+                                    label="Company"
+                                    description=" this is the description of the above input box  "
+                                    />
+
+                                    <InputPacket 
+                                    label="Primary Tag"
+                                    description=" this is the description of the above input box  "
+                                    />
+                                </div>
+                            </div>   
+
+                        
+                            <div class="infoInput">
+                                <h3>About Company</h3>
+                                <div class="info-main">
+                                    <InputPacket
+                                    label="Company Name"
+                                    placeholder="enter enter enter"
+                                    description=" this is the description of the above input box  "
+                                    />
+                                </div>
+                            </div> 
+
+                        </div>
                     <Footer />
                 </div>  
             </div>
