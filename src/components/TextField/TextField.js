@@ -1,8 +1,8 @@
-import React from  'react'
-import './InputPacket.css'
+import React from 'react'
+import './TextField.css'
 
-
-class InputPacket extends React.Component{
+class TextField extends React.Component{
+    
     constructor(props)
     {
         super(props);
@@ -19,16 +19,13 @@ class InputPacket extends React.Component{
             mand=""
         }
         return (
-            <div class='InputPacket'>
+            <div class='TextField'>
                 <h4>{this.props.label}<span>{mand}</span></h4>
-                <input
-                    type="text"
-                    placeholder={this.props.placeholder}
-                    />
+                <textarea rows="4"></textarea>
                 <p>{this.props.description}</p>
             </div>
         )
     }
 }
 
-export default InputPacket;
+export default TextField;

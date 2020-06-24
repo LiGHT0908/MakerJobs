@@ -62,5 +62,26 @@
         padding:10px;
     }
 }
-
+.imginp{
+    width:150px;
+    height:150px;
+    text-align: center;
+    background:rgb(17,17,17);
+    border-radius: 12px;
+    border:4px solid rgb(27,27,27);
+    color: white;
+}
+.PostJob{
+    height:70px;
+    width:200px;
+    font-size: 19px;
+    color:white;
+    background:linear-gradient(to right,rgb(43, 115, 173),rgb(27, 65, 97));
+    
+    border-radius:6px;
+    outline: none;
+}
+.PostJob:hover{
+    background:linear-gradient(to right,rgb(14, 96, 163),rgb(10, 61, 102));
+}
 
